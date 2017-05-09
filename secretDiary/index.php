@@ -1,5 +1,6 @@
 <?php
 session_start();
+mail('mahaveersharma0496@yahoo.com', 'hi', 'hello', "From: goooo");
 $error = "";
 if (array_key_exists("logout", $_GET)) {
     unset($_SESSION["id"]);
